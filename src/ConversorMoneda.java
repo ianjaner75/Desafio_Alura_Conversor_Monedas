@@ -14,7 +14,7 @@ public class ConversorMoneda {
 
     // 1) Se recomienda guardar la API key en variable de entorno EXCHANGE_API_KEY
     //    Para pruebas, puedes reemplazar el fallback por tu clave, pero no la subas a GitHub.
-    private static final String CLAVE_API = System.getenv("EXCHANGE_API_KEY");
+    private static final String CLAVE_API = "9823c3a96b4bee5cfd536808";
     private static final String URL_BASE_API = "https://v6.exchangerate-api.com/v6/";
 
     /**
@@ -29,7 +29,7 @@ public class ConversorMoneda {
             // Usa la clave de entorno si existe; si no, usa un placeholder temporal
             String clave = (CLAVE_API != null && !CLAVE_API.isBlank())
                     ? CLAVE_API
-                    : "PON_TU_API_KEY_AQUI"; // <-- Reemplaza solo para pruebas locales
+                    : "9823c3a96b4bee5cfd536808";
 
             String origen = monedaOrigen.toUpperCase();
             String destino = monedaDestino.toUpperCase();
